@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>prodect views</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>s
+</head>
+<style>
+    body{
+        color: white;
+        background-color: blueviolet;
+    }
+</style>
+<center><h1>prodect views</h1></center>
+<div class="container">
+    <div class="row">
+        <div class="text-center" ></div>
+
+
+        <table align="center" border="3">
+
+
+            <tr>
+                <th>date</th>
+                <th>Enter Name</th>
+                <th>prodect order</th>
+                <th>custmor Accunt</th>
+                <th>emailid</th>
+
+
+            </tr>
+            <tr>
+                <tr>
+
+            {% for x in data %}
+            <th>{{x.date }}</th>
+            <th>{{x.customer_name}}</th>
+            <th>{{x.prodect_order }}</th>
+            <th>{{x.cus_amount }}</th>
+            <th>{{x.email }}</th>
+        </tr>
+
+            {% endfor %}
+
+            </tr>
+
+        </table>
+
+    <tr>
+        <th></th> <button><a href="/home/">goto home.....</a></button></center>
+    </tr>
+    </div>
+</div>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>choose file</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>s
+</head>
+<style>
+    body{
+        color: yellow;
+        background-color: green ;
+
+
+    }
+    h1{
+
+    }
+
+
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="text-center"  ></div>
+        <form method="POST">
+
+               {% csrf_token %}
+               <h1>choose file</h1>
+
+             <table>
+                <thead>
+                <tr>
+                    <th><label>CHOOSE FILE:</label></th>
+                    <td><input type="file" accept=".csv" name="file"></td>
+                </tr>
+
+                 <tr>
+                     <th></th>
+                    <td><center> <button><a href="/home/">goto home.....</a></button></center></td>
+                </tr>
+
+
+                </thead>
+            </table>
+                </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
